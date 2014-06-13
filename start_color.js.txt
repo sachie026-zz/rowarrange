@@ -1,0 +1,23 @@
+function start_color()
+{
+	alert("h");
+	var k = j - 1;
+			while(k >= 0)
+			{
+				var ones = 0, zeros = 0;
+				var value  = 0;
+				var abcd = 0;
+				for(i = 0 ; i < 4; i++)
+			 	{
+			 		var num = k*4 + i;
+			 		//add = add + col_val[num];
+			 		//value = value + col_val[num] * Math.pow(2, 3 - i); 
+			 		if(col_val[num] == 'a')
+			 		{
+			 			alert(col_val[num]);
+			 		}
+alert(col_val[num]);
+				}
+			}
+	setTimeout("start_color()", 20);
+}
