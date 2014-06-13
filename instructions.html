@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>abcd</title>
+	<style>
+		body 
+		{
+			background:#e0e0e0;
+			font-family:impact,sans-serif;
+		}
+		.box
+		{
+			background:#f4f4f4;
+			border:1px solid #f0f0f0;
+		}
+		
+	</style>
+	<script>
+		// Check browser support
+		if (typeof(Storage) != "undefined")
+		  {
+			  // Store
+			  // Retrieve
+			  //document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+			  var check_bs = localStorage.getItem("best_score");
+			  //alert(check_bs);
+			  if(!check_bs)
+			  {
+			  	window.location = "best_score.htm";
+			  }
+			  else
+			  {
+			  //	alert("else");
+			  	//document.getElementById("best").value = check_bs;
+			  }
+		  }
+		else
+		  {
+			  document.getElementById("result").innerHTML="Sorry, your browser does not support Web Storage...";
+		  }
+		  
+	</script>
+
+
+	
+</head>
+<body id = "bd" onkeydown = "move(event)" onload = "set()" >
+<center>
+<table width = "38%"  style = " padding:10 15 10 15; background:#ffffff; 
+background:url('brick.png'); background-size:80% 60%;"
+height = "100%">
+	<tr valign = "top">
+	<td  align = "center">
+	<img src = "images/title.jpg" height = "110" width = "70%" "/>	<br><Br><br>
+
+	<table width = "90%" height = "300" align = "center" style = "font-size:14; line-height:2; ">
+	<tr height = "25%">
+	<td align = "left" style = "">
+<font style = "font-weight:bold; font-size:25; color:#4577ff; ">Instructions</font>
+		<a href = "index.html"><img src = "images/home.png" width = "40" height = "43" style = "float:right;"/></a>
+	</td>
+	</tr>
+	<tr height = "75%" valign = "top" style = "box-shadow:1px 3px 3px 4px #a0a0a0;  ">
+		<td align = "left" style = "text-align:justify; padding:5 8 5 8 ; background:#f8f8f8; word-spacing:2.2; letter-spacing:0.5; font-size:120%;">
+		
+		
+		<b>Task :</b> is to move [ swipe ] the boxes and arrange them in "a b c d" order<br><hr color = "#e0e0e0" size = "1">
+		<b>Play :</b> swipe your finger [ left, right, up or down ] to move the box. After assigned time interval new row will appear at the top and all others will shift down by one row.<br><hr color = "#e0e0e0" size = "1">
+		<b>Points :</b> earned when row with "a b c d" gets vanish, points will increase by 4. if new row comes in order "a b c d" it  vanishes automatically and points are given as lucky bonus<br><hr color = "#e0e0e0" size = "1">
+		<b>Speed :</b> time interval is 22 seconds for slow, 14 seconds for medium and 5 seconds for fast.<br> <hr color = "#e0e0e0" size = "1">
+		<b>Game Over : </b>game is over when all boxes reach to the bottom.
+		</td>
+	</tr>
+	
+	</table>
+	<hr size = "1" color = "white">
+	<br>
+	<a href = "https://github.com/sachie026" style = "text-decoration:none; color:black;"><font style = "font-size:12;">sach @ 2014</font></a>
+	<!--
+	tl = tough level
+	el = easy level
+	-->
+		
+	<!--
+	game box
+	-->
+	
+	</td>
+	</tr>
+</table>
+	
+	
+</center>
+</body>
+
+</html>
