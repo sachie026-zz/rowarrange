@@ -1,0 +1,9 @@
+white colored blank box
+                 is to move the white colored box and arrange other boxes in "a b c d" order<br>
+		                 swipe your finger[left, right, up or down], if you swipe left then white colored box will move to the left and left box will move to right [similar for all directions]. After assigned time interval new row will appear at the top and all others will shift down by one row.<br>
+				                earned when row with "a b c d" gets vanish, points will increase by 4. if new row comes in order "a b c d" it  vanishes automatically and points are given as bonus<br>
+						                <b>speed :</b> time interval is 22 seconds for slow, 14 seconds for medium and 5 seconds for fast. you can change the speed while playing [by clicking one of the options i.e slow, medium, fast]<br>
+								                <b>game over : </b>game is over when all boxes reach to the bottom.
+										
+
+Its a logical game. In this game After assigned time interval new row comes up with four boxes [includes letter a, b, c or d]. Order of the boxes is random. In which you need to move the boxes and arrange a row with "abcd" order so that it will vanish and you will earn points 
