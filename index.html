@@ -1,135 +1,75 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>abcd</title>
-	<style>
-		body 
-		{
-			max-width:100%;
-			max-height:100%;
-			background:#e0e0e0;
-			font-family:impact,sans-serif;
-		
-		}
-		.box
-		{
-			background:#f4f4f4;
-			border:1px solid #f0f0f0;
-		}
-		
-	</style>
-	<script src = "cordova.js"></script>
-	<script>
-		// Check browser support
-		if (typeof(Storage) != "undefined")
-		  {
-			  // Store
-			  // Retrieve
-			  //document.getElementById("result").innerHTML=localStorage.getItem("lastname");
-			  var check_bs = localStorage.getItem("best_score");
-			  //alert(check_bs);
-			  if(!check_bs)
-			  {
-			  	window.location = "best_score.html";
-			  }
-			  else
-			  {
-			  //	alert("else");
-			  	//document.getElementById("best").value = check_bs;
-			  }
-		  }
-		else
-		  {
-			  document.getElementById("result").innerHTML="Sorry, your browser does not support Web Storage...";
-		  }
-		  
-		  function play()
-			{
-				window.location = "play.html";
-			}
-			function inst()
-			{
-				window.location = "instructions.html";
-			}
-			function best()
-			{
-				window.location = "best.html";
-			}
-			function exit()
-			{
-				navigator.app.exitApp();
-			}
-	
-	</script>
 
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Rowarrange : This is a logical, brain storming &amp; score based game.." />
 
-	
-</head>
-<body id = "bd" onkeydown = "move(event)"  >
-<center>
-<table width = "38%"  style = " padding:40 15 10 15; background:#ffffff; 	background:url('brick.png'); background-size:80% 60%;"
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-height = "100%">
-	<tr valign = "top">
+    <title>Rowarrange</title>
+  </head>
 
-	<td  align = "center">
-	
-<img src = "images/title.jpg" height = "110" width = "70%" "/>
-	<br>
+  <body>
 
-	<br><Br><br>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sachie026/rowarrange">View on GitHub</a>
 
-	<table width = "90%" height = "60%" align = "center">
-	<tr height = "30%" valign = "center" >
-	<td  align = "center">
-	<!--
-		play game link button
-	-->
-		<button style = "background:#b0d0f9; color:white; font-weight:bold; font-size:25; width:100%; padding:5 5 5 5; font-family:impact, sans-serif;
-		border:1px solid #ffffff; box-shadow:1px 1px 1px 3px #4577ff; border-radius:5px 5px 5px 5px; height:70%; text-shadow:1px 1px black;cursor:pointer;" onclick = "play()">
-		play game</button>
-	</td>
-	</tr>
-	<tr height = "5%"></tr>
-	<tr height = "30%" valign = "center" >
-	<td  align = "center">
-	<!--
-		instructions link button
-	-->	
-		<button style = "background:#b0d0f9; color:white; font-weight:bold; font-size:25; width:100%; padding:5 5 5 5;  font-family:impact, sans-serif; cursor:pointer;
-		border:1px solid #ffffff; box-shadow:1px 1px 1px 3px #4577ff; border-radius:5px 5px 5px 5px; height:70%; text-shadow:1px 1px black;" onclick = "inst()">
-		instructions</button>
-	</td>
-	</tr>
-	<tr height = "5%"></tr>	
-	<tr height = "30%" valign = "center" >
-	<td  align = "center">
-	<!--
-		best score link button
-	-->
-		<button style = "background:#b0d0f9; color:white; font-weight:bold; font-size:25; width:100%; padding:5 5 5 5;  font-family:impact, sans-serif;cursor:pointer;
-		border:1px solid #ffffff; box-shadow:1px 1px 1px 3px #4577ff; border-radius:5px 5px 5px 5px; height:70%; text-shadow:1px 1px black;" onclick = "best()">
-		best score</button>
-	</td>
-	</tr>
-	</table>
-	<hr size = "1" color = "white">
-	<br>
-	<a href = "https://github.com/sachie026" style = "text-decoration:none; color:black;"><font style = "font-size:12;">sach @ 2014</font></a>
-	<!--
-	tl = tough level
-	el = easy level
-	-->
-		
-	<!--
-	game box
-	-->
-	
-	</td>
-	</tr>
-</table>
-	
-	
-</center>
-</body>
+          <h1 id="project_title">Rowarrange</h1>
+          <h2 id="project_tagline">This is a logical, brain storming &amp; score based game..</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sachie026/rowarrange/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sachie026/rowarrange/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-rowarrange" class="anchor" href="#welcome-to-rowarrange"><span class="octicon octicon-link"></span></a>Welcome to Rowarrange</h3>
+
+<p>Rowarrange is logical score based, browser based game. It's mainly written in javascript. </p>
+
+<h3>
+<a name="how-to-play" class="anchor" href="#how-to-play"><span class="octicon octicon-link"></span></a>How to play</h3>
+
+<p>Swipe [ Up, Left, Right, Down ] the boxes and arrange in alphabetical order i.e a b c d. It's purely score based game.</p>
+
+<h3>
+<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions</h3>
+
+<p><strong>Task</strong> : is to move [ swipe ] the boxes and arrange them in "a b c d" order</p>
+
+<p><strong>Play</strong> : swipe your finger [ left, right, up or down ] to move the box. After assigned time interval new row will appear at the top and all others will shift down by one row.</p>
+
+<p><strong>Points</strong> : earned when row with "a b c d" gets vanish, points will increase by 4. if new row comes in order "a b c d" it vanishes automatically and points are given as lucky bonus</p>
+
+<p><strong>Speed</strong> : time interval is 22 seconds for slow, 14 seconds for medium and 5 seconds for fast.</p>
+
+<p><strong>Game Over</strong> : game is over when all boxes reach to the bottom</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>This game is created by Sachin Jadhav <a href="https://github.com/sachie026" class="user-mention">@sachie026</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Rowarrange maintained by <a href="https://github.com/sachie026">sachie026</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
